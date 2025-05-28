@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Only Up 2D</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Optional: Google Fonts for a retro game feel -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+
+        <div id="ui-overlay">
+            <p>HEIGHT: <span id="heightDisplay">0</span>m</p>
+            <div id="power-bar">
+                <div id="power-fill"></div>
+            </div>
+            <p id="power-text">Time Slow: READY</p>
+        </div>
+
+        <!-- Mobile Controls -->
+        <div id="mobile-controls">
+            <button id="leftButton" class="control-button move-button">LEFT</button>
+            <button id="jumpButton" class="control-button action-button">JUMP</button>
+            <button id="rightButton" class="control-button move-button">RIGHT</button>
+            <button id="timeSlowButton" class="control-button power-button">SLOW</button>
+        </div>
+
+        <!-- Game Over Screen (This remains) -->
+        <div id="game-over-screen" class="game-screen">
+            <h1>GAME OVER!</h1>
+            <p>You fell...</p>
+            <p>FINAL HEIGHT: <span id="finalHeightDisplay">0</span>m</p>
+            <button id="restartGameButton">PLAY AGAIN</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
